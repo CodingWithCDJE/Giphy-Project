@@ -1,0 +1,39 @@
+/* Main SearchBar Container */
+
+.searchbar-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.searchbar-form {
+  display: flex;
+}
+
+.searchbar-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1vh;
+  width: 60vh;
+  border: 1px solid black;
+  border-radius: 30px;
+  box-shadow: 1px 3px 10px;
+}
+
+.searchbar-input-submit {
+  border-radius: 12px;
+  margin: 5px;
+  width: 10vh;
+}
+
+.searchbar-label {
+  margin: 1vh;
+  text-decoration: 2px orange wavy underline;
+}
+
+.searchbar-input-field {
+  margin: 1vh;
+  width: 35vh;
+  height: 2vh;
+  border-radius: 12px;
+}
