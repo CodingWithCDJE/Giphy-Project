@@ -11,6 +11,21 @@ class App extends Component {
     };
   }
 
+  loadingTrend = async () => {
+    const response = await giphy.get('/v1/gifs/trending', {
+      params: {
+        api_key: 'w5izDdpXD6u4CNRFXyBzKhsVF7NK8hhA',
+        limit: 34,
+      },
+    });
+
+    this.setState({ gifs: response.data.data });
+  };
+
+  componentDidMount() {
+    this.loadingTrend();
+  }
+
   onSearchSubmit = async (term) => {
     const response = await giphy.get('/v1/gifs/search', {
       params: {
